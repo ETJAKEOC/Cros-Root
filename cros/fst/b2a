@@ -1,0 +1,3 @@
+dd if=/dev/mmcblk0p4 obs=1M of=/dev/mmcblk0p2
+dd if=/dev/mmcblk0p5 obs=1M of=/dev/mmcblk0p3
+

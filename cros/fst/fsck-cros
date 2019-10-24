@@ -1,0 +1,3 @@
+e2fsck -fDvC 0 -E discard /dev/mmcblk0p1
+e2fsck -fDvC 0 -E discard /dev/mmcblk0p3
+e2fsck -fDvC 0 -E discard /dev/mmcblk0p5

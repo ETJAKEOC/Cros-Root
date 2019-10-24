@@ -1,0 +1,1 @@
+echo "export MANPATH=/usr/local/man:$MANPATH" >> ~/.bashrc && source ~/.bashrc && echo "export PAGER=/usr/local/bin/less" >> ~/.bashrc && . ~/.bashrc

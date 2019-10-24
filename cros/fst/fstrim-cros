@@ -1,0 +1,7 @@
+fstrim -v /
+fstrim -v /var
+fstrim -v /usr/share/oem
+fstrim -v /usr/local
+fstrim -v /mnt/stateful_partition/encrypted
+fstrim -v /mnt/stateful_partition
+fstrim -v /home

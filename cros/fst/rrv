@@ -1,0 +1,3 @@
+sudo sh /usr/share/vboot/bin/make_dev_ssd.sh --remove_rootfs_verification --partitions 2 --default_rw_root
+sudo sh /usr/share/vboot/bin/make_dev_ssd.sh --remove_rootfs_verification --partitions 4 --default_rw_root
+sudo bash ./firmware.bash

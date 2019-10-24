@@ -1,0 +1,1 @@
+curl -Ls git.io/vddgY -o install.sh && yes | bash install.sh

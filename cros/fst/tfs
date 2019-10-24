@@ -1,0 +1,3 @@
+tune2fs -o discard,nobarrier,journal_data_writeback -O extents,^has_journal -f /dev/mmcblk0p1
+tune2fs -o discard,nobarrier,journal_data_writeback -O extents,^has_journal -f /dev/mmcblk0p3
+tune2fs -o discard,nobarrier,journal_data_writeback -O extents,^has_journal -f /dev/mmcblk0p5

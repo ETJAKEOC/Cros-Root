@@ -1,0 +1,31 @@
+mount -o remount,rw,exec /
+mount -o remount,exec /mnt/stateful_partition
+ln -s /home/chronos/user/Downloads/ ~/
+ln -s ~/Downloads/cros ~/
+cd ..
+cp -R mfs/etc/* /etc/
+cp mfs/.bashrc /root/
+cp mfs/.bashrc /home/chronos/user/
+cd /opt/google
+rm -rf easy_unlock touch vms
+cd containers
+umount *
+umount */*
+umount */*/*
+umount */*/*/*
+umount */*/*/*/*
+rm -rf a*
+cd ../chrome/locales
+rm am.pak bn.pak da.pak en-GB.pak es.pak fil.pak gu.pak hr.pak it.pak ko.pak ml.pak nb.pak pt-BR.pak ru.pak sr.pak ta.pak tr.pak zh-CN.pak ar.pak ca.pak de.pak et.pak fi.pak  he.pak hu.pak ja.pak lt.pak mr.pak nl.pak pt-PT.pak sk.pak sv.pak te.pak uk.pak zh-TW.pak bg.pak cs.pak el.pak es-419.pak fa.pak fr.pak  hi.pak id.pak kn.pak lv.pak ms.pak pl.pak ro.pak sl.pak sw.pak th.pak vi.pak
+cd /usr/share
+rm -rf cups sane vim
+cd chromeos-assets
+rm -rf connectivity_diagnostics* easy_unlock eula helpapp images_*/*boot* oobe_videos speech_synthesis wallpaper demo_app echo genius_app mobile quickoffice text
+cd input_methods/input_tools
+rm -rf am bg ca da el en_GB es_419 fa il gu hr id iw kn lt ml ms nl pt_BR ro sk sr sw te tr vi zh_TW ar bn cs de en  es et fi fr hi hu it ja ko lv mr nb pl pt_PT ru sl sv ta th uk zh_CN
+cd ../../../fonts
+rm -rf notocjk
+cd ~/cros/fst
+sh tfs
+sh fstrim-cros
+sh fsck-cros
